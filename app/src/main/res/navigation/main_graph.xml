@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/blankFragmentabout">
+
+    <fragment
+        android:id="@+id/blankFragmentabout"
+        android:name="com.example.menum5.BlankFragmentabout"
+        android:label="fragment_blank_fragmentabout"
+        tools:layout="@layout/fragment_blank_fragmentabout" >
+        <action
+            android:id="@+id/action_blankFragmentabout_to_blankFragmentsetings"
+            app:destination="@id/blankFragmentsetings" />
+        <action
+            android:id="@+id/action_blankFragmentabout_to_blankFragmentProfile"
+            app:destination="@id/blankFragmentProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentProfile"
+        android:name="com.example.menum5.BlankFragmentProfile"
+        android:label="fragment_blank_profile"
+        tools:layout="@layout/fragment_blank_profile" />
+    <fragment
+        android:id="@+id/blankFragmentsetings"
+        android:name="com.example.menum5.BlankFragmentsetings"
+        android:label="fragment_blank_fragmentsetings"
+        tools:layout="@layout/fragment_blank_fragmentsetings" >
+        <action
+            android:id="@+id/action_blankFragmentsetings_to_blankFragmentabout"
+            app:destination="@id/blankFragmentabout" />
+    </fragment>
+</navigation>
